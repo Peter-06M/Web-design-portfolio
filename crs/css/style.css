@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+i:before {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+section {
+  scroll-margin-top: 80px; /* Высота хедера */
+}
+
+/* header */
+
+.header {
+
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #635bff;
+}
+
+.logo_link{
+  text-decoration: none;
+  color: #5249e4;
+}
+
+
+.logo-text {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #666666;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #635bff;
+}
+
+.contact-button {
+    background-color: #635bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #5249e4;
+}
+
+.contact-button--white {
+    background-color: transparent;
+    color: #333;
+    padding: 8px 18px;
+    border: 2px solid #635bff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    
+}
+
+.contact-button--white:hover {
+    background-color: #635bff;
+    color: #ffffff;
+}
+
+/* container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* intro */
+
+.intro {
+    margin-top: 58px;
+    background: linear-gradient(45deg, #EEF2FD, #F3F7FF, #F7F8FD);
+    padding: 100px 100px;
+}
+
+.intro_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro_header {
+    width: 50%;
+}
+
+.intro_title {
+    font-size: 36px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.intro_text_violet {
+    color: #635bff;
+}
+
+.intro_text {
+    margin-bottom: 25px;
+    font-size: 20px;
+    width: 85%;
+    line-height: 1.4;
+    color: #666666;
+}
+
+.intro_btns{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+
+.intro_img {
+    margin: auto;
+    width: 225px;
+
+    height: 225px;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 5px solid white;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    background-color: #f0f0f0;
+
+}
+
+
+.intro_img img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+/* about */
+
+.about {
+    padding: 40px;
+}
+
+.about_title {
+    text-align: center;
+    font-size: 32px;
+}
+
+.about_inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.about_header {
+    width: 50%;
+    line-height: 1.5;
+    color: #333;
+}
+
+.fa-arrow-up-from-bracket {
+    margin-right: 5px;
+}
+
+.greeting {
+    font-size: 28px !important;
+    font-weight: 700;
+}
+
+.about_inner p {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.resume-link {
+    font-size: 16px;
+    color: #635bff;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.resume-link:hover {
+    border-bottom: 2px solid #635bff;
+}
+
+
+.skills {
+    width: 45%;
+}
+
+.skills_inner {
+    display: flex;
+}
+
+.skills_list_1 {
+    margin-right: 80px;
+}
+
+.skills ul {
+    padding: 10px 0;
+}
+
+.skills ul li {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+.fa-regular.fa-circle-check {
+    color: #635bff;
+}
+
+/* portfolio */
+
+.portfolio {
+    background-color: #f8f9fb;
+    padding: 40px 0;
+}
+
+.portfolio_title {
+    text-align: center;
+    font-size: 32px;
+}
+
+.portfolio_btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+.portfolio_btn {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: background-color 0.3s;
+}
+
+.portfolio_btn:last-child {
+    margin-right: 0;
+}
+
+.portfolio_btn:hover {
+    background-color: #5249e4;
+    color: #fff;
+}
+
+/* Portfolio cards */
+
+/* Основной контейнер для карточек */
+.portfolio_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+    justify-content: center;
+}
+
+/* Стиль карточек */
+.portfolio-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Изображение внутри карточки */
+.portfolio-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #eef2fd;
+}
+
+/* Заголовок */
+.portfolio-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 15px 0 5px;
+}
+
+/* Сфера дизайна */
+.portfolio-field {
+    display: block;
+
+    width: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #353783;
+    margin: 15px auto 15px;
+    padding: 5px;
+    background-color: rgb(223, 230, 255);
+    border-radius: 100px;
+
+}
+
+/* Описание проекта */
+.portfolio-description {
+    font-size: 14px;
+    color: #7d8d98;
+    line-height: 1.5;
+    padding: 0 30px 15px;
+    text-align: left;
+}
+
+.portfolio_btn.active {
+  background-color: #5249e4;
+  color: #fff;
+  
+}
+
+
+
+/* services */
+
+.services {
+    margin: 50px 0;
+}
+
+
+.service_inner {
+    padding: 50px;
+    background-color: #f7f8fd;
+    text-align: center;
+
+}
+
+.service_card_icon i {
+    font-size: 40px;
+    color: #635bff;
+}
+
+.services-title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center;
+}
+
+.services-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #eef2fd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.service-card ul {
+    padding: 0 15px;
+}
+
+.service-card li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* reviews */
+
+.reviews {
+    padding: 50px;
+    background-color: #f9fafc;
+    text-align: center;
+  }
+  
+  .testimonials-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .testimonials-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+
+.testimonial-card_name{
+    margin-left: 65px;
+}
+  
+  .testimonial-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 30px;
+    object-fit: cover;
+  }
+  
+  .testimonial-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial-role {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial-company {
+    font-size: 0.9rem;
+    color: #5b6cea;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  
+  .testimonial-rating {
+    color: #ffc107;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-text {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  /* contact */
+
+  .contact{
+    background-color: #fff;
+    padding: 40px 0;
+  }
+  .contact_inner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+  }
+
+
+  
+  .contact-left {
+    flex: 1;
+    width: 50%;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .contact-description {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .contact-info .icon {
+    margin-right: 10px;
+    color: #5b6cea;
+  }
+  
+  .contact-info a {
+    color: #5b6cea;
+    text-decoration: none;
+  }
+  
+  .contact-socials {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    color: #5b6cea;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .contact-right {
+    flex: 1;
+    width: 50%;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form label {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #5b6cea;
+    outline: none;
+  }
+  
+  .contact-form .btn-submit {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #5b6cea;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .contact-form .btn-submit:hover {
+    background-color: #4a5cb2;
+  }
+
+
+  /* footer */
+  .footer {
+    background-color: #12172b;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px 40px;
+
+  }
+  
+  .footer-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2c3349;
+    padding-bottom: 20px;
+    
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    
+  }
+  
+  .logo-icon {
+    font-size: 1.5rem;
+    color: #7389ff;
+  }
+
+  .footer-logo-text{
+
+    font-weight: 700;
+  }
+  
+  .footer-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-nav a:hover {
+    color: #7389ff;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+
+
+/* FAQ */
+
+#faq {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  #faq .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #faq h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #111;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item .question {
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .faq-item .question:hover {
+    color: #007BFF;
+  }
+  
+  .faq-item .answer {
+    margin-top: 5px;
+    padding-left: 10px;
+    display: none;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Активный ответ */
+  .faq-item.active .answer {
+    display: block;
+  }
+
+
+
+@media (max-width: 1200px){
+  .container{
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px){
+  .container{
+    max-width: 700px;
+  }
+
+  .skills_inner {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.greeting{
+  margin-left: 60px;
+}
+  
+}
+
+@media (max-width: 425px){
+  /* тут я понял, что адаптивную верстку делать не надо*/
+}
